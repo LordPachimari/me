@@ -30,8 +30,8 @@ export default function Page() {
         <div className="grid grid-cols-2 gap-4">
           <ul className="list-disc text-slate-800 font-semibold">
             <li>Nextjs</li>
-            <li>{`NoSQL (Dynamodb)`}</li>
-            <li>{`SQL (Postgresql with ORM)`} </li>
+            <li>{`NoSQL (Dynamodb, MongoDB)`}</li>
+            <li>{`SQL (Postgresql, MySQL with ORM)`} </li>
             <li>TRPC</li>
             <li>GraphQL</li>
           </ul>
