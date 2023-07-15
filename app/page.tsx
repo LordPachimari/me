@@ -33,12 +33,15 @@ export default function Page() {
             <li>{`NoSQL (Dynamodb)`}</li>
             <li>{`SQL (Postgresql with ORM)`} </li>
             <li>TRPC</li>
+            <li>GraphQL</li>
           </ul>
 
           <ul className="list-disc text-slate-800 font-semibold">
-            <li>GraphQL</li>
             <li>Node js</li>
             <li>Serverless</li>
+            <li>Typescript</li>
+            <li>Javascript</li>
+            <li>Python</li>
           </ul>
         </div>
 
