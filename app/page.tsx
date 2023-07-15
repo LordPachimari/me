@@ -26,9 +26,7 @@ export default function Page() {
           Independent learner.
         </h1>
         <p className="w-5/6 text-lg text-slate-600">{`Hi, I'm Thien (Ivan). I'm currently a business student. In my free time, I do programming. `}</p>
-        <p className="py-4 text-slate-600 text-lg">
-          Technologies that I work with:
-        </p>
+        <p className="py-4 text-slate-600 text-lg">Technologies that I use:</p>
         <div className="grid grid-cols-2 gap-4">
           <ul className="list-disc text-slate-800 font-semibold">
             <li>Nextjs</li>
