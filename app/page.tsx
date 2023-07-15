@@ -16,26 +16,44 @@ const projects: {
 
 export default function Page() {
   return (
-    <section className="flex w-full items-center ">
-      <article className="h-96 w-full">
+    <section className="flex w-full items-center p-5 h-fit">
+      <article className=" w-full">
         <Avatar className="h-16 w-16">
           <AvatarImage src="https://studlancer-public-files.s3.ap-southeast-2.amazonaws.com/images/photo_2023-07-11_06-51-29.jpg" />
           <AvatarFallback>IN</AvatarFallback>
         </Avatar>
-        <h1 className="font-default py-2 text-4xl font-bold text-slate-700">
+        <h1 className="font-default py-4 text-4xl font-bold text-slate-700">
           Independent learner.
         </h1>
-        <p className="w-5/6 text-lg text-slate-600">{`Hi, I'm Thien (Ivan). I'm currently a business student. In my free time, I learn programming. `}</p>
-        <p className="text-lg text-slate-600 my-10">{`Here are some of the projects that I made:`}</p>
+        <p className="w-5/6 text-lg text-slate-600">{`Hi, I'm Thien (Ivan). I'm currently a business student. In my free time, I do programming. `}</p>
+        <p className="py-4 text-slate-600 text-lg">
+          Technologies that I work with:
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <ul className="list-disc text-slate-800 font-semibold">
+            <li>Nextjs</li>
+            <li>{`NoSQL (Dynamodb)`}</li>
+            <li>{`SQL (Postgresql with ORM)`} </li>
+            <li>TRPC</li>
+          </ul>
+
+          <ul className="list-disc text-slate-800 font-semibold">
+            <li>GraphQL</li>
+            <li>Node js</li>
+            <li>Serverless</li>
+          </ul>
+        </div>
+
+        <p className="text-lg text-slate-600 my-10">{`Here are some of the projects that I've made:`}</p>
         <div>
           {projects.map((p) => (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://studlancer-web.vercel.app"
-              key={p.title}
-            >
-              <Card className="w-full md:w-80">
+            <Card className="w-full md:w-80">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://studlancer-web.vercel.app"
+                key={p.title}
+              >
                 <CardHeader>
                   <h3 className="font-bold">{p.title}</h3>
                 </CardHeader>
@@ -48,8 +66,8 @@ export default function Page() {
                   />
                 </CardContent>
                 <CardFooter>{p.description}</CardFooter>
-              </Card>
-            </a>
+              </a>
+            </Card>
           ))}
         </div>
       </article>
