@@ -44,6 +44,15 @@ export default function Page() {
             <li>Python</li>
           </ul>
         </div>
+        <p className="py-4 text-slate-600 text-lg">Currently learning...</p>
+        <div className="grid grid-cols-2 gap-4">
+          <ul className="list-disc text-slate-800 font-semibold">
+            <li>OS fundamentals</li>
+            <li>Network fundamentals</li>
+            <li>D&A</li>
+            <li>Docker</li>
+          </ul>
+        </div>
 
         <p className="text-lg text-slate-600 my-10">{`Here are some of the projects that I've made:`}</p>
         <div>
