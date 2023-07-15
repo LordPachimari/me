@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { Mdx } from "app/components/mdx";
 import { allBlogs } from "contentlayer/generated";
 import Balancer from "react-wrap-balancer";
-import ViewCounter from "../view-counter";
 
 export async function generateMetadata({
   params,
