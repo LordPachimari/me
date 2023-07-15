@@ -35,7 +35,7 @@ export default function Page() {
               href="https://studlancer-web.vercel.app"
               key={p.title}
             >
-              <Card className="w-80">
+              <Card className="w-full md:w-80">
                 <CardHeader>
                   <h3 className="font-bold">{p.title}</h3>
                 </CardHeader>
