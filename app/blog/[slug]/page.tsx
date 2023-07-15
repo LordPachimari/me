@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Mdx } from "app/components/mdx";
 import { allBlogs } from "contentlayer/generated";
-import { getTweets } from "lib/twitter";
 import Balancer from "react-wrap-balancer";
 import ViewCounter from "../view-counter";
-import { getViewsCount } from "lib/metrics";
 
 export async function generateMetadata({
   params,
